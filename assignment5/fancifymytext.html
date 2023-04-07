@@ -11,9 +11,21 @@
 
 	<body>
 		<h1>Fancify my Text</h1>
-		
-
-		<!-- Your UI controls go here -->
-		
+		<label for="Text"></label>
+		<fieldset name = "text">
+		<textarea id="userInput" rows="4"cols="30" >Enter Text...</textarea>
+		</fieldset>
+		<label for="Fancift"> </label>
+		<fieldset name = "btns">
+			<button name = "btn1" onclick= makeBig()>Bigger! </button>
+			<input type="radio" value = "FancySchmancy" id="fancy" name = "test"  onchange = "onChange()" onclick="makeFancy()" >
+			<label for="html">FancyShmancy</label>
+			
+			<input type="radio" value = "BoringBetty" id="boring"  name = "test" onchange = "onChange()" onclick="makeBoring()">
+			<label for="html">BoringBetty</label><br>
+		</fieldset>
+		<fieldset name = "mooBtn">
+			<button name = "btn2" onclick= Mooify()>Moo! </button>
+		</fieldset>
 	</body>
 </html>
